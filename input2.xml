@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<node>
+<number>1
+<cameraid>1</cameraid>
+<count>14</count>
+<timestamp>2016-10-26 16:57:13</timestamp>
+<cameraid>2</cameraid>
+<count>4</count>
+<timestamp>2016-10-26 16:57:13</timestamp>
+<cameraid>3</cameraid>
+<count>10</count>
+<timestamp>2016-10-26 16:57:13</timestamp>
+<cameraid>4</cameraid>
+<count>20</count>
+<timestamp>2016-10-26 16:57:13</timestamp>
+</number>
+</node>
+

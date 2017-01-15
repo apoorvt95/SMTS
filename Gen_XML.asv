@@ -1,0 +1,15 @@
+docNode = com.mathworks.xml.XMLUtils.createDocument... 
+    ('Traffic Node');
+docRootNode = docNode.getDocumentElement;
+docRootNode.setAttribute('Node','1');
+for i=1:4
+    thisElement = docNode.createElement('child_node'); 
+    thisElement.appendChild... 
+        (docNode.createTextNode(sprintf('%i',i)));
+    docRootNode.appendChild(thisElement);
+end
+docNode.appendChild(docNode.createComment('this is a comment'));
+
+xmlFileName = ['Gen','.xml'];
+xmlwrite(xmlFileName,docNode);
+type(xmlFileName);
