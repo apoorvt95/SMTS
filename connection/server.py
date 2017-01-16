@@ -1,13 +1,34 @@
-#This is server python code which uses socket to connect to raspberrypi.
-import socket
+from socket import *
+#Enter IP Address of node
+host = "192.168.1.199"
 
-serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-serversocket.bind(('localhost', 8089))
-serversocket.listen(5) # become a server socket, maximum 5 connections
+print host
 
-while True:
-    connection, address = serversocket.accept()
-    buf = connection.recv(64)
-    if len(buf) > 0:
-        print buf
-        break
+port = 7777
+
+s = socket(AF_INET, SOCK_STREAM)
+
+print "Socket Made"
+
+s.bind((host,port))
+
+print "Socket Bound"
+
+s.listen(5)
+
+print "Listening for connections..."
+
+q,addr = s.accept()
+f=open("dataset.txt","a+")
+flag=1
+while(flag):
+	msg = q.recv(1024)
+	for i in msg:
+		if(i=='E'):
+			flag=0		
+		else:
+			f.write(msg)
+		print " " + msg
+print "\n----------------------------------"
+ 	
+f.close()
