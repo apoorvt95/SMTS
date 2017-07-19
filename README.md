@@ -10,7 +10,7 @@ SMTS is Smart Traffic Management System using Cognitive Recognition based on Int
 * A network of such RaspPI are connected to a Main server where the RaspPI forwards the calculated Traffic Density. Using our self defined algorithm, The main server finds optimal traffic signal timer value for each signal and then forwards to each RaspberryPI. These RaspberryPI then furthers forwards to each signal.
 
 ## Phases
-###  Network
+### 1) Network
 * Connection of RaspberryPI with microcontroller interfaced with Traffic Control Signals.
 * Interfacing of IP camera at traffic control signal.
 * Pipeline of realtime dataflow between IP camera and RaspberryPI module.
@@ -36,7 +36,7 @@ SMTS is Smart Traffic Management System using Cognitive Recognition based on Int
 2) IP Camera
 
 ## Final Project Report
- 
+
 For better understanding the scope and objective of project please refer to the following link: https://drive.google.com/open?id=0BwbpueonZ5A7MjlkMEV5VFprSTQ
 
 ## System Design
