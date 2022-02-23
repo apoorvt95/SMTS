@@ -35,10 +35,6 @@ SMTS is Smart Traffic Management System using Cognitive Recognition based on Int
 1) RaspberryPI
 2) IP Camera
 
-## Final Project Report
-
-For better understanding the scope and objective of project please refer to the following link: https://drive.google.com/open?id=0BwbpueonZ5A7MjlkMEV5VFprSTQ
-
 ## System Design
 
 ![Alt text](systemdesign/image.jpg/?raw=true "System Design") 
